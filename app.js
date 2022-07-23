@@ -108,7 +108,7 @@ const newObject = array => ({
 
 
 
-let sum = function(a, b, c, d) {
+let sum = (a, b, c, d)=> {
   return a + b + c + d;
 };
 
@@ -128,7 +128,7 @@ let objectLit = function() {
  console.log(objectLit());
 
 
-let sumAndProduct = function(a, b) {
+let sumAndProduct = (a, b)=> {
   let sum = a + b;
   let product = a * b;
   return [sum, product];
@@ -138,7 +138,7 @@ let sumAndProduct = function(a, b) {
 console.log(sumAndProduct(3, 9));
 
 
-let message = function(name) {
+let message = (name)=> {
   return `Hello, ${name}!`;
 };
 
@@ -146,7 +146,7 @@ let message = function(name) {
  console.log(message('Allie'));
 
 
-let Student = function(name, age, hometown) {
+let Student = (name, age, hometown)=> {
   this.name = name;
   this.age = age;
   this.hometown = hometown;
@@ -162,7 +162,7 @@ let joe = new Student('Joe Schmoe', 100, 'Anytown, USA');
 
 
 
-Student.prototype.greeting = function() {
+Student.prototype.greeting = ()=> {
   return `Hi, my name is ${this.name}`;
 };
 
@@ -174,7 +174,7 @@ Student.prototype.greeting = function() {
 
 
 
-Student.courseName = function() {
+Student.courseName = ()=> {
   return 'This student is enrolled in Code 301.';
 };
 
